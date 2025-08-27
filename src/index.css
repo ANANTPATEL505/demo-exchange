@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  
+.img{
+  background-image: url(stars.png);
+  background-color: rgb(0, 0, 0);
+}
+
+  .dropdown-menu{
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    width: 220px;
+
+  }
+  .dropdown-item{
+    color: aliceblue;
+    border-color: aliceblue;
+    border-width: 0 2px 2px 2px;
+  
+  }
+  .nav-com:hover{
+    .dropdown-menu{
+    display: block;
+  }
+  .dropdown-item{
+    background:transparent;
+    color: aliceblue;
+    border-color: aliceblue;
+    border-width: 0 2px 2px 2px;
+  }
+  .arrow{
+    content: url(Untitled-2.png);
+    height: 10px;
+  }
+}
+.fcen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow{
+  content: url(Untitled-1.png);
+  height: 10px;
+  padding-left: 5px;
+}
+.nav-dtx{
+  color: rgb(252, 252, 252);
+  padding-left: 1rem;
+  font-size: 10px;
+}
+.bgb{
+  background-color: rgb(28, 28, 28);
+}
+.swap1{
+  grid-row: span 1 / span 1;
+  border-radius: 10px;
+  height: 3rem;
+  background-color: rgb(211, 211, 211);
+}
+.logitem{
+  background: transparent;
+  outline-width: 0;
+  color: white;
+  width: 75%;
+}
+
+@keyframes fadeInSlideUp {
+  0% {
+      opacity: 0;
+      transform: translateY(15rem); /* Start below its final position */
+      visibility: hidden; /* Hide element initially */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* End at its final position */
+      visibility: visible; /* Show element after fade-in */
+  }
+}
+
+/* Content class with fade-in and slide-up animation */
+.content {
+  animation: fadeInSlideUp 0.9s ease-in-out forwards; /* Use forwards to retain final state */
+}
+  
+/* TradingViewWidget.module.css */
+.tradingview-widget-copyright {
+  display: none !important;
+}
+
+}
